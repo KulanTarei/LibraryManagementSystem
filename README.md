@@ -61,15 +61,17 @@ This is a simple Library Management System web application built with ASP.NET Co
 - The application uses EF Core Code-First approach for database management.
 - Proper validation and error handling is implemented for better user experience.
 
-Thank you for reviewing the project. Feel free to reach out if you have any questions.
-
-*Developed by Kulan Tarei*  
-*Date: September 2025*
+## Outputs
 
 <img width="953" height="358" alt="Screenshot 2025-09-20 135054" src="https://github.com/user-attachments/assets/b30403fa-004a-44d4-a2ee-02f73ae58277" />
 <img width="960" height="386" alt="Screenshot 2025-09-20 135447" src="https://github.com/user-attachments/assets/83e85acd-5dfc-42e5-96c0-bf2fb05f3877" />
 <img width="960" height="359" alt="Screenshot 2025-09-20 135436" src="https://github.com/user-attachments/assets/d3bf148f-359b-4d0b-85bc-1f6b7dd01c65" />
 <img width="960" height="327" alt="Screenshot 2025-09-20 135642" src="https://github.com/user-attachments/assets/5ca4ff44-43fa-4857-9809-cd6dfb4a9875" />
 <img width="959" height="379" alt="Screenshot 2025-09-20 135329" src="https://github.com/user-attachments/assets/a5aec736-6972-4304-8503-5482991b3d15" />
+
+Thank you for reviewing the project. Feel free to reach out if you have any questions.
+
+*Developed by Kulan Tarei*  
+*Date: September 2025*
 
 ```
