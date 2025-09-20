@@ -73,5 +73,3 @@ Thank you for reviewing the project. Feel free to reach out if you have any ques
 
 *Developed by Kulan Tarei*  
 *Date: September 2025*
-
-```
