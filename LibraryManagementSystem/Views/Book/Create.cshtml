@@ -1,0 +1,29 @@
+﻿@model Book
+<h2>Add Book</h2>
+<form method="post" class="needs-validation" novalidate>
+    <div class="mb-3">
+        <label>Title</label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label>Author</label>
+        <input asp-for="Author" class="form-control" />
+        <span asp-validation-for="Author" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label>ISBN</label>
+        <input asp-for="Isbn" class="form-control" />
+        <span asp-validation-for="Isbn" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label>Published Year</label>
+        <input asp-for="PublishedYear" type="number" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Available Copies</label>
+        <input asp-for="AvailableCopies" type="number" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+</form>
+

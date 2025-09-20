@@ -1,0 +1,35 @@
+﻿@model List<Book>
+<h2>Books List</h2>
+<a href="/Book/Create" class="btn btn-primary mb-3">Add New Book</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th>Year</th>
+            <th>Copies</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var b in Model)
+        {
+            <tr>
+                <td>@b.Title</td>
+                <td>@b.Author</td>
+                <td>@b.Isbn</td>
+                <td>@b.PublishedYear</td>
+                <td>@b.AvailableCopies</td>
+                <td>
+                    <a href="/Book/Edit/@b.Id" class="btn btn-sm btn-warning">Edit</a>
+                    <a href="/Book/Delete/@b.Id" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+

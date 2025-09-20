@@ -1,0 +1,32 @@
+﻿@model List<Borrowing>
+<h2>Borrowings</h2>
+<a href="/Borrowing/Borrow" class="btn btn-primary mb-3">Borrow a Book</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Book ID</th>
+            <th>Member ID</th>
+            <th>Borrow Date</th>
+            <th>Return Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var b in Model)
+        {
+            <tr>
+                <td>@b.BookId</td>
+                <td>@b.MemberId</td>
+                <td>@b.BorrowDate.ToString()</td>
+                <td>@(b.ReturnDate.HasValue? b.ReturnDate.Value.ToShortDateString() : "Not Returned")</td>
+                <td>
+                    @if (!b.ReturnDate.HasValue)
+                    {
+                        <a href="/Borrowing/Return/@b.Id" class="btn btn-warning btn-sm">Return</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

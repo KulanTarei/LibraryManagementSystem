@@ -1,0 +1,30 @@
+﻿@{
+    var books = ViewBag.Books as List<Book>;
+    var members = ViewBag.Members as List<Member>;
+}
+<h2>Borrow a Book</h2>
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+<form method="post" class="needs-validation" novalidate>
+    <div class="mb-3">
+        <label>Book</label>
+        <select name="bookId" class="form-select">
+            @foreach (var b in books)
+            {
+                <option value="@b.Id">@b.Title (@b.AvailableCopies)</option>
+            }
+        </select>
+    </div>
+    <div class="mb-3">
+        <label>Member</label>
+        <select name="memberId" class="form-select">
+            @foreach (var m in members)
+            {
+                <option value="@m.Id">@m.Name (@m.MemberId)</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-success">Borrow</button>
+</form>
